@@ -1,4 +1,4 @@
-# sweept.it
+# sweep.it
 Sweeping the mine.
 
 This is my minesweeper game created in CSS, VSC.
