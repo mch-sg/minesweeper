@@ -2,3 +2,41 @@
 body {
     color: white;
 }
+
+
+.container {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+} .container input:checked ~ .checkmark:after {
+    display: block;
+} .container input:checked ~ .checkmark {
+    background-color:crimson;
+}
+
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+} .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
