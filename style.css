@@ -1,42 +1,73 @@
 
 body {
     color: white;
+    background-color: #000000; 
+} h1 {
+    text-align: center;
+    font-family: monospace,'Inter', sans-serif;
+    font-size: 25px;
+    margin-top: 80px;
+} a {
+    font-family:monospace;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+} 
+.nav.active, .nav:hover { color: #4d5459;   }      .nav:hover { color:#4d5459;   }
+.ac { text-align: center; margin-bottom: 100px;     }   .ab { text-align: center;   } 
+
+.nav {
+    font-family:monospace;
+    font-size: 15px;
+    margin: 25px;
+    text-decoration: none;
+    color: #14151a; 
+    font-weight: bold;
 }
 
 
 .container {
-    display: block;
+    display: inline-block;
     position: relative;
-    margin-bottom: 5px;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-right: 90px;
+    margin-top: 35px;
+    font-size: 0%;
     cursor: pointer;
-} .container input:checked ~ .checkmark:after {
-    display: block;
 } .container input:checked ~ .checkmark {
-    background-color:crimson;
-}
-
-
-.container input {
+    background-color: #4d5459;
+    pointer-events: none;
+} .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 0;
-    width: 0;
+    font-display: none;
 }
 
+.board {
+    display: inline-block;
+    align-items: center;
+    position: absolute;
+    margin-left: 37.5%;
+}
 
 
 .checkmark {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 50px;
-    width: 50px;
-    background-color: black;
-} .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+    height: 85px;
+    width: 85px;
+    margin-bottom: 5%;
+    background-color: #1a1b21;
+    outline-style: solid;
+    outline-color: #222;
+    outline-width: 0.5px;
+    border-radius: 5px;
+} 
+
+
+.mine input:checked ~ .checkmark {
+    background-color: crimson;
+    pointer-events: none;
 }
