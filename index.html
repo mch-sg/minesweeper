@@ -1,93 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html class="noselect">
 
 <head>
-    <title>sweep.it</title>
+    <title>sweep.zone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 
 <body>
 
-    <h1>sweep.it</h1>
-    <div class="ac">    <a href="https://github.com/mch-sg" target="_blank" class="mhs">by mhs</a>   </div>
 
+<!--        HEADING          -->
+
+<div class="header">
+    <h1 class="project-title">sweep.zone</h1>
+    <p class="text">by <a href="https://github.com/mch-sg" target="_blank">Magnus Hvidtfeldt</a>
+    </div>
+    <p class="text"><br>Minimalistic minesweeper, click to play.<br> Suggestions? <a href="https://twitter.com/" target="_blank">Tweet me.</a></p>
+</div> 
+
+
+<!--
 <div class="ab">
     <a href="index.html" class="nav active">Mine</a>
     <a href="url" class="nav">Flag</a>
-</div>
+</div>  -->
 
+
+
+<!--        MINESWEEPER BOARD       -->
 
 <form class="sweeper">
-    <div class="board">
+    <div class="board" id="checkAll">
         <label class="container">1
-            <input id="field-checkbox1" type="checkbox">
+            <input id="field-checkbox" type="checkbox"'>
             <span class="checkmark"></span>
         </label>
         <label class="container mine">2
-            <input id="field-checkbox2" type="checkbox">
+            <input id="mine" type="checkbox">
             <span class="checkmark"></span>
         </label>
         <label class="container">3
-            <input id="field-checkbox3" type="checkbox">
+            <input id="field-checkbox" type="checkbox">
             <span class="checkmark"></span>
         </label>
         <label class="container">4
-            <input id="field-checkbox4" type="checkbox">
+            <input id="field-checkbox" type="checkbox">
             <span class="checkmark"></span>
         </label>
         <label class="container">5
-            <input id="field-checkbox5" type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-        <label class="container" style="display: block;">6
-            <input id="field-checkbox6" type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-        <label class="container mine">7
-            <input id="field-checkbox7" type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-        <label class="container">8
-            <input id="field-checkbox8" type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-        <label class="container">9
-            <input id="field-checkbox9" type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-        <label class="container">10
-            <input id="field-checkbox10" type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-        <label class="container">11
-            <input id="field-checkbox11" type="checkbox">
+            <input id="field-checkbox" type="checkbox">
             <span class="checkmark"></span>
         </label>
 
-        <label class="container" style="display: block;">12
-            <input id="field-checkbox12" type="checkbox">
+        <label class="container">6
+            <input id="field-checkbox" type="checkbox">
             <span class="checkmark"></span>
         </label>
-        <label class="container"">13
-            <input id="field-checkbox13" type="checkbox">
+        <label class="container mine">7
+            <input id="mine2" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">8
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">9
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">10
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">11
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">12
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">13
+            <input id="field-checkbox" type="checkbox">
             <span class="checkmark"></span>
         </label>
         <label class="container">14
-            <input id="field-checkbox14" type="checkbox">
+            <input id="field-checkbox" type="checkbox">
             <span class="checkmark"></span>
         </label>
         <label class="container">15
-            <input id="field-checkbox15" type="checkbox">
+            <input id="field-checkbox" type="checkbox">
             <span class="checkmark"></span>
         </label>
+
         <label class="container mine">16
-            <input id="field-checkbox16" type="checkbox">
+            <input id="mine3" type="checkbox">
             <span class="checkmark"></span>
         </label>
         <label class="container">17
-            <input id="field-checkbox17" type="checkbox">
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" >18
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">19
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">20
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container mine">21
+            <input id="mine4" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" >22
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">23
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">24
+            <input id="field-checkbox" type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container mine">25
+            <input id="mine5" type="checkbox">
             <span class="checkmark"></span>
         </label>
     </div>
@@ -95,14 +143,42 @@
 
 
 
-<!-- <div class="foot" style="text-align: end;">
-    <a href="url">Retry</a>
-    <a href="url">Options</a>
-    <a href="url">Help</a>
-</div> -->
+<!--        FOOTER      -->
+
+<div class="footer">
+    <a class="botnav" href="index.html">Retry  </a>
+    <a class="botnav id="help" onclick="document.getElementById('hh').style.visibility = 'visible';">Help</a>
+</div>
+
+
+
+<!--        ONCLICK ELEMENTS (HELP, LOSE SCREEN, ETC)       -->
+
+<div id="hh" class="clickStart" onclick="this.style.visibility='hidden';">
+<p class="in">Sweep the clear zones, and avoid the mines.<br><br>
+    Your goal is to clear all the zones not occupied by a mine. <br>
+    If you hit a mine, you lose.
+    
+    <br><br><br><br>Click anywhere to return.
+</p> 
+</div>
+
+<div class="lost" id="lose" >
+You lost. <a href="index.html"> Retry</a>
+</div>
+
+<script>
+document.getElementById("mine").onclick = function() {
+    if(this.checked) {
+        document.getElementById('lose').style.visibility = 'visible';
+    } else {
+        document.getElementById('lose').style.visibility = 'hidden';
+    }
+} 
+</script>
 
 
 
 </body>
 
-</html>
+</html> 
