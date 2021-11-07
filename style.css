@@ -1,32 +1,110 @@
+/*      MAIN ATTRIBUTES      */
 
 body {
     color: white;
     background-color: #000000; 
-} h1 {
-    text-align: center;
-    font-family: monospace,'Inter', sans-serif;
-    font-size: 25px;
-    margin-top: 80px;
+    font-family: 'Inter';
+    font-weight:300;
 } a {
-    font-family:monospace;
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
     text-align: center;
+    color: #929da6;
+    transition: 0.3s;
+    cursor: pointer;
+} a:hover {
     color: white;
-    font-weight: bold;
-} 
-.nav.active, .nav:hover { color: #4d5459;   }      .nav:hover { color:#4d5459;   }
-.ac { text-align: center; margin-bottom: 100px;     }   .ab { text-align: center;   } 
-
-.nav {
-    font-family:monospace;
-    font-size: 15px;
-    margin: 25px;
-    text-decoration: none;
-    color: #14151a; 
-    font-weight: bold;
+    opacity: 1;
 }
 
+
+
+/*      HEADING ATTRIBUTES       */
+
+.header {
+    margin: 0px auto;
+    max-width: 500px;
+    margin-top: 100px;
+    align-items: center;
+} .project-title {
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+    margin: 0px;
+    font-weight: 400;
+} .text {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
+} 
+
+
+
+/*      FOOTING ATTRIBUTES      */
+
+.footer {
+    margin: 0px auto;
+    max-width: 500px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+
+/*      NAVIGATION AND INFOBAR ATTRIBUTES      */
+
+.nav.active, .nav:hover { opacity: 1;transition: 0.3s;   }      .nav:hover { opacity: 1;   }
+.ab { text-align: center; margin-top: 100px;   } 
+.botnav:hover { opacity: 1;transition: 0.3s;    } 
+
+.nav {
+    margin: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #929da6; 
+    opacity: 0.5;
+} .botnav {
+    color: #929da6;
+    opacity: 0.5;
+}
+
+
+.in {   padding: 40vh 0     }
+
+.clickStart {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 200;
+    color: white;
+    line-height: 1.5vh;
+    top:0%;
+    left:0%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+} .lost {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    color: white;
+    line-height: 90vh;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100vh;
+    text-align: center;
+
+}
+
+
+
+/*      MINESWEEPER BOARD       */
 
 .container {
     display: inline-block;
@@ -34,40 +112,61 @@ body {
     margin-bottom: 60px;
     margin-right: 90px;
     margin-top: 35px;
+    height: 100%;
     font-size: 0%;
     cursor: pointer;
 } .container input:checked ~ .checkmark {
-    background-color: #4d5459;
+    transition: 0.2s;
+    background-color: #929da6;
     pointer-events: none;
 } .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     font-display: none;
-}
-
-.board {
-    display: inline-block;
+} .board {
+    text-align: center;
+    margin: 0px auto;
+    max-width: 500px;
+} .sweeper {
+    margin-top: 35px;
+    display: block;
     align-items: center;
-    position: absolute;
-    margin-left: 37.5%;
-}
-
-
-.checkmark {
+    flex-flow: row wrap;
+    justify-content: center;
+} .checkmark {
     position: absolute;
     height: 85px;
     width: 85px;
     margin-bottom: 5%;
-    background-color: #1a1b21;
-    outline-style: solid;
-    outline-color: #222;
-    outline-width: 0.5px;
+    background-color: #141618;
     border-radius: 5px;
 } 
 
 
+
+/*        MINE/BOMB CHECK         */
+
 .mine input:checked ~ .checkmark {
+    transition: 0.2s;
     background-color: crimson;
     pointer-events: none;
-}
+
+    /* width: 822%; */
+
+} 
+
+
+
+
+/*        NO SELECTION        */
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
