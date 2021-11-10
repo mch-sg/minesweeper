@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="noselect">
+<html class="noselect" oncontextmenu="return false">
 
 <head>
     <title>sweep.zone</title>
@@ -7,9 +7,11 @@
     
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script type="javascript" src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
+
 
 
 <!--        HEADING          -->
@@ -17,28 +19,20 @@
 <div class="header">
     <h1 class="project-title">sweep.zone</h1>
     <p class="text">by <a href="https://github.com/mch-sg" target="_blank">Magnus Hvidtfeldt</a>
-    </div>
-    <p class="text"><br>Minimalistic minesweeper, click to play.<br> Suggestions? <a href="https://twitter.com/" target="_blank">Tweet me.</a></p>
+    <p class="text">Minimalistic minesweeper, click to play.<br> Suggestions? <a href="https://twitter.com/" target="_blank">Tweet me.</a></p>
 </div> 
-
-
-<!--
-<div class="ab">
-    <a href="index.html" class="nav active">Mine</a>
-    <a href="url" class="nav">Flag</a>
-</div>  -->
 
 
 
 <!--        MINESWEEPER BOARD       -->
 
 <form class="sweeper">
-    <div class="board" id="checkAll">
+    <div class="board">
         <label class="container">1
-            <input id="field-checkbox" type="checkbox"'>
+            <input id="wm1" type="checkbox">
             <span class="checkmark"></span>
         </label>
-        <label class="container mine">2
+        <label class="container m">2
             <input id="mine" type="checkbox">
             <span class="checkmark"></span>
         </label>
@@ -59,7 +53,7 @@
             <input id="field-checkbox" type="checkbox">
             <span class="checkmark"></span>
         </label>
-        <label class="container mine">7
+        <label class="container m">7
             <input id="mine2" type="checkbox">
             <span class="checkmark"></span>
         </label>
@@ -97,7 +91,7 @@
             <span class="checkmark"></span>
         </label>
 
-        <label class="container mine">16
+        <label class="container m">16
             <input id="mine3" type="checkbox">
             <span class="checkmark"></span>
         </label>
@@ -118,7 +112,7 @@
             <span class="checkmark"></span>
         </label>
 
-        <label class="container mine">21
+        <label class="container m">21
             <input id="mine4" type="checkbox">
             <span class="checkmark"></span>
         </label>
@@ -134,7 +128,7 @@
             <input id="field-checkbox" type="checkbox">
             <span class="checkmark"></span>
         </label>
-        <label class="container mine">25
+        <label class="container m">25
             <input id="mine5" type="checkbox">
             <span class="checkmark"></span>
         </label>
@@ -147,7 +141,7 @@
 
 <div class="footer">
     <a class="botnav" href="index.html">Retry  </a>
-    <a class="botnav id="help" onclick="document.getElementById('hh').style.visibility = 'visible';">Help</a>
+    <a class="botnav" id="help" onclick="document.getElementById('hh').style.visibility = 'visible';">Help</a>
 </div>
 
 
@@ -155,11 +149,13 @@
 <!--        ONCLICK ELEMENTS (HELP, LOSE SCREEN, ETC)       -->
 
 <div id="hh" class="clickStart" onclick="this.style.visibility='hidden';">
-<p class="in">Sweep the clear zones, and avoid the mines.<br><br>
-    Your goal is to clear all the zones not occupied by a mine. <br>
+<p class="in">
+    
+    Sweep the clear zones, and try to avoid the 5 mines on the field.<br><br>
+    Your goal is to clear the entire field without stepping on a mine. <br>
     If you hit a mine, you lose.
     
-    <br><br><br><br>Click anywhere to return.
+    <br><br>Click anywhere to return.
 </p> 
 </div>
 
@@ -167,18 +163,15 @@
 You lost. <a href="index.html"> Retry</a>
 </div>
 
-<script>
-document.getElementById("mine").onclick = function() {
-    if(this.checked) {
-        document.getElementById('lose').style.visibility = 'visible';
-    } else {
-        document.getElementById('lose').style.visibility = 'hidden';
-    }
-} 
-</script>
+<div class="win" id="win" >
+    You won! Congratulations. <a href="index.html">Stay in touch.</a>
+</div>
 
 
+
+<!--        END SCRIPTS        -->
+
+<script src="script.js"></script>
 
 </body>
-
 </html> 
