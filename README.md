@@ -1,7 +1,7 @@
 # sweep.zone
 Sweeping the mine.
 
-This is my minesweeper game created in CSS, VSC.
+This is my game similar to minesweeper. Created in VSC.
 
 ⠀
 
