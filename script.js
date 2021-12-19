@@ -36,16 +36,3 @@ document.getElementById("wm1").onclick = function() {
     if(this.checked) { document.getElementById('win').style.visibility = 'visible'; } 
     else {  document.getElementById('win').style.visibility = 'hidden'; }
 } 
-
-document.getElementById("wm2").onclick = function() {
-    if(this.checked) { document.getElementById('win').style.visibility = 'visible'; } 
-    else {  document.getElementById('win').style.visibility = 'hidden'; }
-} 
-
-
-
-//      TESTING WIN WHEN CHECKED     //
-
-if ($('.wm:checked').length == $('.wm').length) {
-    document.getElementById('win').style.visibility = 'visible';
-}
