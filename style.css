@@ -82,7 +82,7 @@ body {
 } .lost {
     visibility: hidden;
     position: absolute;
-    background-color: rgba(92, 7, 14, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 200;
     color: white;
     line-height: 100vh;
@@ -94,7 +94,7 @@ body {
 } .win {
     visibility: hidden;
     position: absolute;
-    background-color: rgba(44, 139, 84, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 200;
     color: white;
     line-height:100vh;
@@ -153,6 +153,15 @@ body {
 .m input:checked ~ .checkmark {
     transition: 0.2s;
     background-color: crimson;
+    pointer-events: none;
+
+    /* width: 822%; */
+
+} 
+
+.wm input:checked ~ .checkmark {
+    transition: 0.2s;
+    background-color: #065c52;
     pointer-events: none;
 
     /* width: 822%; */
