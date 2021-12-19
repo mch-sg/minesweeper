@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <script type="javascript" src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="icon" href="https://dashboard.snapcraft.io/site_media/appmedia/2016/07/icon_app256_2.png">
 </head>
 
 <body>
@@ -29,15 +30,15 @@
 <form class="sweeper">
     <div class="board">
         <label class="container">1
-            <input id="wm1" type="checkbox">
+            <input type="checkbox">
             <span class="checkmark"></span>
         </label>
         <label class="container m">2
             <input id="mine" type="checkbox">
             <span class="checkmark"></span>
         </label>
-        <label class="container">3
-            <input id="field-checkbox" type="checkbox" class="wm">
+        <label class="container m">3
+            <input id="mine2" type="checkbox" class="wm">
             <span class="checkmark"></span>
         </label>
         <label class="container">4
@@ -53,16 +54,16 @@
             <input id="field-checkbox" type="checkbox" class="wm">
             <span class="checkmark"></span>
         </label>
-        <label class="container m">7
-            <input id="mine2" type="checkbox">
+        <label class="container">7
+            <input  type="checkbox">
             <span class="checkmark"></span>
         </label>
         <label class="container">8
             <input id="field-checkbox" type="checkbox" class="wm">
             <span class="checkmark"></span>
         </label>
-        <label class="container">9
-            <input id="field-checkbox" type="checkbox" class="wm">
+        <label class="container wm">9
+            <input id="wm1" type="checkbox">
             <span class="checkmark"></span>
         </label>
         <label class="container">10
@@ -151,8 +152,9 @@
 <div id="hh" class="clickStart" onclick="this.style.visibility='hidden';">
 <p class="in">
     
-    Sweep the clear zones, and try to avoid the 5 mines on the field.<br><br>
-    Your goal is to clear the entire field without stepping on a mine. <br>
+    Sweep the clear zones, and avoid the 5 mines on the field.<br><br>
+    There is one winner-field. Win by 
+    clearing that specific field. <br>
     If you hit a mine, you lose.
     
     <br><br>Click anywhere to return.
@@ -164,7 +166,7 @@ You lost. <a href="index.html"> Retry</a>
 </div>
 
 <div class="win" id="win" >
-    You won! Congratulations. <a href="index.html">Stay in touch.</a>
+    You won! Congratulations. <a href="index.html"> Play Again</a>
 </div>
 
 
