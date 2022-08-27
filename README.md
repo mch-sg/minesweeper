@@ -3,7 +3,7 @@ Sweeping the mine.
 <br />  
 This is my game similar to minesweeper. Created in VSC.
 <br />  
-<br />  
+
 ![image](https://user-images.githubusercontent.com/93657779/187051854-a75fc63e-0c00-4d1d-bc71-891040ba5f3c.png)
 
 <br />  
