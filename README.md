@@ -1,13 +1,14 @@
 # sweep.zone
 Sweeping the mine.
-
+<br />  
 This is my game similar to minesweeper. Created in VSC.
+<br />  
 
+![image](https://user-images.githubusercontent.com/93657779/187051854-a75fc63e-0c00-4d1d-bc71-891040ba5f3c.png)
 
-![image](https://user-images.githubusercontent.com/93657779/187051829-9da15141-a1aa-448b-9d32-3d172290af21.png)
-
-
-⠀
+<br />  
+<br />  
+<br />  
 
 ### Instructions
 
